@@ -4,8 +4,8 @@ import downloadForPlatform from "../utils/downloadForPlatform";
 
 const HomePage = () => {
     return (
-        <div
-            class={"flex flex-col w-screen h-screen text-black bg-gray-100 dark:text-white dark:bg-gray-900"}>
+
+        <div class={"flex flex-col w-full h-full"}>
             <div
                 class={"flex justify-between items-center p-3 w-full h-auto border-b border-gray-300 dark:border-black"}>
                 <div class={"flex items-center space-x-2"}>
@@ -22,9 +22,9 @@ const HomePage = () => {
                 </div>
             </div>
             <div
-                class={"flex flex-col p-3 w-full h-full border-t border-white dark:border-gray-800 border-b border-b-gray-300 dark:border-b-black px-10 md:px-20 lg:px-48 overflow-y-auto"}>
-                <div class={"flex flex-col md:flex-row md:items-center md:space-x-10 w-full"}>
-                    <div class={"flex flex-col w-full md:w-2/5 h-auto py-20 space-y-10"}>
+                class={"flex flex-col p-3 w-full h-full border-t border-white dark:border-gray-800 border-b border-b-gray-300 dark:border-b-black px-5 md:px-20 lg:px-48 overflow-y-auto"}>
+                <div class={"flex flex-col md:flex-row md:items-center md:space-x-10 space-y-5 w-full h-auto"}>
+                    <div class={"flex flex-col w-full md:w-2/5 h-auto py-10 md:py-20 space-y-10"}>
                         <div class={"text-4xl font-bold"}>
                             <span class={"text-green-700 dark:text-green-500"}>Peer-To-Peer</span> File Sharing
                             Made <span class={"text-green-700 dark:text-green-500"}>Easy</span>
@@ -40,18 +40,17 @@ const HomePage = () => {
                             </div>
                         </div>
                     </div>
-                    <div class={"shadow-lg rounded-md"}>
-                        <img src={ScreenShot} class={"w-full h-96 rounded-md"}/>
+                    <div class={"w-full md:w-3/5 shadow-lg rounded-md"}>
+                        <img src={ScreenShot} class={"w-full rounded-md"}/>
                     </div>
                 </div>
-
             </div>
             <div
                 class={"flex justify-center items-center p-3 w-full h-auto border-t border-white dark:border-gray-800"}>
                 2022 @ LoneWolf Software
             </div>
         </div>
-    )
+    );
 };
 
 export default HomePage;

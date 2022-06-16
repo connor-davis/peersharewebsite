@@ -15,6 +15,11 @@ const HomePage = () => {
                     <div class={"text-2xl text-green-700 dark:text-green-500 font-bold"}>PeerShare</div>
                 </div>
                 <div class={"flex items-center space-x-2"}>
+                    <a
+                        class={"text-white dark:text-black hover:text-green-700 dark:hover:text-green-500 px-4 py-2 text-center text-lg rounded-lg cursor-pointer"}
+                        href={"https://github.com/connor-davis/peershare"}
+                        target={"_blank"}>Github
+                    </a>
                     <div
                         class={"text-white dark:text-black bg-green-700 dark:bg-green-500 px-4 py-2 text-center text-lg rounded-lg cursor-pointer"}
                         onClick={() => downloadForPlatform()}>Download

@@ -14,12 +14,17 @@ const downloadForPlatform = () => {
     let aElement = document.createElement("a");
 
     if (OSName === "Windows") {
-        aElement.setAttribute("href", "https://github.com/connor-davis/peershare/releases/download/v0.0.6/PeerShare-Setup-0.0.6.exe");
+        aElement.setAttribute("href", "https://github.com/connor-davis/peershare/releases/download/v0.0.7/PeerShare-Setup-0.0.7.exe");
         aElement.click();
     }
 
     if (OSName === "Mac") {
-        aElement.setAttribute("href", "https://github.com/connor-davis/peershare/releases/download/v0.0.6/PeerShare-0.0.6.dmg");
+        aElement.setAttribute("href", "https://github.com/connor-davis/peershare/releases/download/v0.0.7/PeerShare-0.0.7.dmg");
+        aElement.click();
+    }
+
+    if (OSName === "Linux") {
+        aElement.setAttribute("href", "https://github.com/connor-davis/peershare/releases/download/v0.0.7/peer-share-0.0.7.tar.gz");
         aElement.click();
     }
 };
